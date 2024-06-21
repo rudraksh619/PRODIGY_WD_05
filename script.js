@@ -34,7 +34,7 @@ async function getData(location){
     var detail= await data.json();
     console.log(detail);
 
-   var img=detail.weather[0].main+".png";
+   var img="Images/" + detail.weather[0].main+".png";
    console.log(img);
    console.log(document.querySelector(".weather"));
    document.querySelector(".weather").setAttribute("src",img);
